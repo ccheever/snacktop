@@ -1,0 +1,16 @@
+{
+  "name": "snacktop",
+  "version": "1.0.0",
+  "description": "Desktop Snack",
+  "main": "index.js",
+  "repository": "https://github.com/ccheever/snacktop.git",
+  "author": "Charlie Cheever <ccheever@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-expo": "^3.0.0"
+  },
+  "dependencies": {
+    "snack-sdk": "^0.2.0"
+  }
+}
