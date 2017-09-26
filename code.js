@@ -1,14 +1,15 @@
-import React, { Component } from 'react';
-import { Text, View, StyleSheet } from 'react-native';
-import { Constants } from 'expo';
+import React, { Component } from "react";
+import { Text, View, StyleSheet } from "react-native";
+import { Constants } from "expo";
+
+import moment from "moment";
 
 export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.paragraph}>
-            This is from a source code file! Fully armed batallion.
-        </Text>
+        <Text style={styles.paragraph}>Hi Nik, its kinda fast....</Text>
+        <Text>{moment().format("YYYY ss")}</Text>
       </View>
     );
   }
@@ -17,16 +18,16 @@ export default class App extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
     paddingTop: Constants.statusBarHeight,
-    backgroundColor: '#ecf0f1',
+    backgroundColor: "#ecf0f1"
   },
   paragraph: {
     margin: 24,
     fontSize: 18,
-    fontWeight: 'bold',
-    textAlign: 'center',
-    color: '#34495e',
-  },
+    fontWeight: "bold",
+    textAlign: "center",
+    color: "#34495e"
+  }
 });
